@@ -126,3 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ration
   isSpining: 1
+  spinSpeed: 0
+  pickUpSound: {fileID: 0}
+  audioSource: {fileID: 0}

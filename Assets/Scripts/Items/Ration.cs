@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Ration : MonoBehaviour
@@ -9,7 +10,13 @@ public class Ration : MonoBehaviour
     [SerializeField] private float spinSpeed;
     [SerializeField] private AudioClip pickUpSound;
     [SerializeField] private AudioSource audioSource;
+    
+    
 
+    private void Start()
+    {
+        Init();
+    }
 
     void Init()
     {
@@ -17,7 +24,29 @@ public class Ration : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        { 
+           Debug.Log("Player");
+           OnPlayerPickedUp();
+        }
+        else
+        {
+            Debug.Log("Not Player");
+        }
+    }
 
+
+    void OnPlayerPickedUp()
+    {
+        isSpining = false;
+        //Agregar lógica de inventario aquí
+        Debug.Log("Player Picked Up");
+        gameObject.SetActive(false);
+    }
+    
+    
     void Update()
     {
         if (isSpining == true)
