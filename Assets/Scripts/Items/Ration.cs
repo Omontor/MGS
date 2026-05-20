@@ -44,6 +44,7 @@ public class Ration : MonoBehaviour
         //Agregar lógica de inventario aquí
         Debug.Log("Player Picked Up");
         gameObject.SetActive(false);
+        
     }
     
     
