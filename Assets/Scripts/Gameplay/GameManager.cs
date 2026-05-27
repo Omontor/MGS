@@ -11,13 +11,15 @@ public enum GameState
 }
 public class GameManager : MonoBehaviour
 {
+    //variables
     [SerializeField] private GameState gameState;
     [SerializeField] private float elapsedTime;
     [SerializeField] private float alertTimer;
     
+    
     [SerializeField] private MusicManager musicManager;
     [SerializeField] private LevelManager levelManager;
-
+    [SerializeField] private InventoryManager inventoryManager;
     
     
     private void Start()

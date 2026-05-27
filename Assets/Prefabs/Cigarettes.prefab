@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3329050868007557722}
   - component: {fileID: 6204012038446055329}
   - component: {fileID: 1299203905633825281}
-  - component: {fileID: 4625409548998759532}
+  - component: {fileID: 7728820356317236212}
   m_Layer: 0
-  m_Name: Ration
+  m_Name: Cigarettes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.987, y: 0.37, z: 10.218}
-  m_LocalScale: {x: 0.4330315, y: 0.19001421, z: 0.4330315}
+  m_LocalScale: {x: 0.17130293, y: 0.19001421, z: 0.17795862}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e129bf36fa3354accb7124e4d073c0e0, type: 2}
+  - {fileID: 2100000, guid: d58549ea66f9b814d8945cded6f0f251, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4625409548998759532
+--- !u!114 &7728820356317236212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,12 +122,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6955416116986532293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 893e551e5539746d8bc13c63e00758f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c7e6eaa1afdfd7449e799a558a63523, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ration
-  collectibleType: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Cigarettes
+  collectibleType: 1
   isSpining: 1
-  spinSpeed: 0
+  spinSpeed: 30
   pickUpSound: {fileID: 0}
   audioSource: {fileID: 0}
-  maxHeld: 2
+  maxHeld: 1

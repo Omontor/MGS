@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 894020014}
   - component: {fileID: 894020016}
   - component: {fileID: 894020013}
+  - component: {fileID: 894020017}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -407,6 +408,23 @@ MonoBehaviour:
   alertTimer: 0
   musicManager: {fileID: 1431391703}
   levelManager: {fileID: 894020013}
+  inventoryManager: {fileID: 894020017}
+--- !u!114 &894020017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894020012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d360054304818e429ebef746d658cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
+  texto: Hola
+  textos: []
+  textoLista: []
+  maxItemsHeld: 0
 --- !u!1001 &1309596659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,6 +666,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1364576266}
     m_Modifications:
+    - target: {fileID: 1299203905633825281, guid: f39aaeda62d2444f0a15ad058d483684, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4541452569925460271, guid: f39aaeda62d2444f0a15ad058d483684, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.72
@@ -885,6 +907,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 56589628}
   m_SourcePrefab: {fileID: 100100000, guid: 330efb0e9eed825408809c121441b8a5, type: 3}
+--- !u!1001 &2102896638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.088879
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1455
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.2247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541452569925460271, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955416116986532293, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
+      propertyPath: m_Name
+      value: Cigarettes
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 908c6cb13257b3d48aae3425b2b49eeb, type: 3}
 --- !u!1001 &7928283071828021228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -959,3 +1038,4 @@ SceneRoots:
   - {fileID: 1951673400}
   - {fileID: 1854264514}
   - {fileID: 1364576266}
+  - {fileID: 2102896638}
